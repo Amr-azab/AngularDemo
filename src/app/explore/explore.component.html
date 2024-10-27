@@ -1,0 +1,37 @@
+<section class="services my-5 p-5">
+  <div class="container text-center">
+    <h2>At Your Services</h2>
+    <hr class="mx-auto my-4" />
+    <div class="row mt-5">
+      <div class="col-lg-3" *ngFor="let data of servicesData">
+        <div class="icon my-4">
+          <i [class]="data.iconClass"></i>
+        </div>
+        <h4 class="mb-3">{{ data.heading }}</h4>
+        <p class="mt-1">{{ data.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="explore my-5">
+  <div class="container text-center">
+    <h2>Explore Templates</h2>
+    <div class="row mt-4">
+      <div class="col-lg-6 col-sm-12" *ngFor="let data of exploreData">
+        <div class="card" style="width: 28rem">
+          <img [src]="data.img" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ data.title }}</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-dark"
+              >Download Now <i class="fas fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

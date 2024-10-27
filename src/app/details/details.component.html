@@ -1,0 +1,19 @@
+<div class="container mx-auto w-75 my-5 text-center">
+  <h1 class="bg-dark text-light p-4">{{ specificNew.title }}</h1>
+  <img [src]="specificNew.urlToImage" alt="" />
+  <p class="mt-2">{{ specificNew.description }}</p>
+  <hr class="my-5" />
+  <p class="mt-2" style="font-size: 1.4rem">
+    Published By
+    <span class="text-secondary p-2">
+      {{ specificNew.author ? specificNew.author : "Aitb Company" }}
+    </span>
+    At {{ specificNew.publishedAt }}
+  </p>
+  <a routerLink="/news" class="btn btn-secondary">Back To News</a>
+</div>
+
+<!--deh beb2a bnro7 L => localhost:4200/news-->
+<!-- <a routerLink="/news" class="btn btn-secondary">Back To News</a> -->
+<!--deh beb2a bnro7 L => localhost:4200/details/:id/news  as like (localhost:4200/3/news)-->
+<!-- <a routerLink="news" class="btn btn-secondary">Back To News</a> -->

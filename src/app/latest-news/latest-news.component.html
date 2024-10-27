@@ -1,0 +1,40 @@
+<section class="news text-center my-5">
+  <div class="container">
+    <div class="bg-dark text-white p-3 text">
+      <h1>Latest News Live</h1>
+      <hr />
+    </div>
+
+    <div class="row mt-3">
+      <div
+        class="col-md-4 col-sm-12 my-2"
+        *ngFor="let usanew of news; let i = index"
+      >
+        <div class="card">
+          <img
+            [src]="usanew.urlToImage"
+            alt=""
+            class="card-img-top"
+            style="width: 20rem"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ usanew.title }}</h5>
+            <p class="card-text">{{ usanew.description }}</p>
+            <hr />
+            <p>Publiched At {{ usanew.publishedAt }}</p>
+            <a [href]="usanew.url" class="btn btn-outline-info" target="_blank"
+              >Show More</a
+            >
+            <a class="btn btn-outline-dark mx-2" [routerLink]="['/details/', i]"
+              >Details</a
+            >
+            <!--details deh bt5er(btt7km) al url peremater -->
+            <!--/details/1 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--details deh bt5er(btt7km) al url peremater -->

@@ -1,0 +1,64 @@
+.showcase {
+  /* background-image: url("../../assets/images/bg-masthead.jpg"); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../../assets/images/bg-masthead.jpg");
+  padding-top: 15rem;
+  /* padding-bottom: 30rem; */
+  padding-bottom: calc(15rem + 30rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.showcase h2,
+h3 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 0.4px 0.4px 0.4px #ccc;
+}
+.showcase h3 {
+  font-size: 1.4rem;
+}
+.showcase hr {
+  width: 6%;
+  margin: 25px auto;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+.showcase p {
+  width: 60%;
+  margin: 10px auto;
+}
+.showcase .btn-dark {
+  margin-top: 35px;
+  padding: 16px;
+  border-radius: 30%;
+}
+.showcase .btn-dark:hover {
+  background-color: #fff !important;
+  color: #2f2f2f !important;
+  transform: rotate(30deg);
+  transition: all 1.2s ease-out;
+}
+/*Quote section*/
+.quote {
+  margin-top: 100px !important;
+  margin-bottom: 120px !important;
+}
+.quote i {
+  opacity: 0.8;
+}
+.carsoul a {
+  color: #888 !important;
+  font-weight: bold;
+}
+.carsoul a:hover {
+  color: #2f2f2f !important;
+  transition: color 1s ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .carsoul .content {
+    text-align: center;
+
+    width: 80%;
+    margin: 25px auto 0 auto;
+  }
+}
